@@ -81,14 +81,16 @@ function myFunction1() {
             rv = false;
             for (var j=0;j<numCasual.length;j++) {
                 rv = rv || numUser[i]==numCasual[j];
-                if ( numUser[i]==numCasual[j]){
+                if ( numUser[i]===numCasual[j]){
                     corretti[i]=numUser[i];
                 }
             }
             if(rv) {
                 alert("I numeri corretti sono " + corretti[i]);
-            }
+              }
+              
         }
+        alert("I numeri corretti sono " + corretti.length);
         // console.log("DENTRO FUNZIONE");        
         // console.log("lunghezza numero casuale " + numCasual.length);
         // console.log("numero casuale " + numCasual);
@@ -97,11 +99,10 @@ function myFunction1() {
     }
 
     
-    alert("I numeri corretti sono " + corretti.length);
 }
 // console.log("FUORI FUNZIONE" );
 // console.log("lunghezza numero casuale " + numCasual.length);
- console.log("numero casuale " + numCasual);
+console.log("numero casuale " + numCasual);
 // console.log("lunghezza numero utente " + numUser.length);
 // console.log("numero utente " + numUser);
 
